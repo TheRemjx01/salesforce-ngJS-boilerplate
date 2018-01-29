@@ -1,14 +1,4 @@
 import angular from 'angular';
-import ngCookies from 'angular-cookies';
-import ngFontAwesome from 'angular-fontawesome'
-import angularAnimate from 'angular-animate';
-import angularAria from 'angular-aria';
-import angularMessages from 'angular-messages';
-import uiRouter from '@uirouter/angularjs';
-import ngMaterial from 'angular-material';
-
-import routes from './app.routes';
-
 import * as sfRemoteUtils from 'salesforce-js-remoting-utils/dist/sf-remote-utils';
 const {NgJSRemoteService} = sfRemoteUtils;
 
