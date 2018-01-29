@@ -1,5 +1,5 @@
 # Salesforce-AngularJS-Boilerplate
-## A AngularJS SPA Application Boilerplate for Salesforce Developer
+## An AngularJS SPA Application Boilerplate for Salesforce Developer
 ### Concept 
 To develop Salesforce in the moderm web development - SPA. 
 Run fast, efficiently. No reload at all.
