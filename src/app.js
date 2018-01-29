@@ -7,11 +7,20 @@ import angularMessages from 'angular-messages';
 import uiRouter from '@uirouter/angularjs';
 import ngMaterial from 'angular-material';
 
-import routes from './app-routes';
+import routes from './app.routes';
+
+import * as sfRemoteUtils from 'salesforce-js-remoting-utils/dist/sf-remote-utils';
+const {NgJSRemoteService} = sfRemoteUtils;
+
+import appComponent from './app.component';
 
 import { getBaseHref } from './app.config';
 
-import {VFRemotingService as JSRemoteService} from "salesforce-js-remoting-utils";
-
 const rootBaseHref = getBaseHref();
-angular.element(document.getElementsByTagName('head')).append(angular.element(`<base href="${rootBaseHref}" />`));
+const app = function (angular) {
+    return angular
+        .module('spa-app', [])
+        .service('ngJSRemoteService', NgJSRemoteService)
+        .component('appRoot', appComponent);
+}(angular);
+
