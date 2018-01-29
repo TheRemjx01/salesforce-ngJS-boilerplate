@@ -9,5 +9,4 @@ export default [
         url: '/404',
         component: 'invalidUrlScene'
     },
-
 ]

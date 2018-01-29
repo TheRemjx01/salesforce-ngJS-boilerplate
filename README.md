@@ -1,5 +1,5 @@
 # Salesforce-AngularJS-Boilerplate
-## A AngularJS SPA Application Boilerplate for Salesforce Developer
+## An AngularJS SPA Application Boilerplate for Salesforce Developer
 ### Concept 
 To develop Salesforce in the moderm web development - SPA. 
 Run fast, efficiently. No reload at all.
@@ -7,6 +7,12 @@ In the basic example, we have already integrated `webpack bundle` from `local de
 
 In this guide, we will covered `ui-router` integrated into our app to complete our SPA Application.
  
+### Update/ Changes from last guide
+1. Add new Scene: `HomeScene`, `InvalidUrlScene` (aka `404Scene`)
+2. Add new Component: `NavBarComponent`
+3. Add `app.routes.js` - config all routes
+4. Update `app.js` - register routes, config base href, register new components and scenes.
+
 
 ### Step by Step
 #### From `Salesforce`
