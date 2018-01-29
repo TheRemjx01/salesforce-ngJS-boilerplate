@@ -8,8 +8,7 @@ Run fast, efficiently. No reload at all.
 ### Cover in this guide:
 1. How to integrate local dev server+ tunnelling to `Visualforce page`
 2. Make simple AngularJS Component Base Application Works!
-3. How to connect `ApexController` `RemoteAction` with your app using `ngJSRemoteService` from library`salesforce-js-remoting-utils`
-
+3. How to simply connect `ApexController` `RemoteAction` with your app using `ngJSRemoteService` from library [salesforce-js-remoting-utils`](https://www.npmjs.com/package/salesforce-js-remoting-utils)
 
 ### Step by step
 #### Server Site: From `Salesforce`
@@ -102,5 +101,6 @@ Here are the steps:
             Greeting from Salesforce: Hello World
         ```
      
-    
-    
+### Next Step:
+Integrate and restructure to component base application. 
+Click here: ===> [Ui Router Example](https://github.com/TheRemjx01/salesforce-ngJS-boilerplate/tree/router-example)
