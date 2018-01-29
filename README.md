@@ -7,7 +7,7 @@ Run fast, efficiently. No reload at all.
 
 ### Cover in this guide:
 1. How to integrate local dev server+ tunnelling to `Visualforce page`
-2. Make simple AngularJS Application Works!
+2. Make simple AngularJS Component Base Application Works!
 3. How to connect `ApexController` `RemoteAction` with your app using `ngJSRemoteService` from library`salesforce-js-remoting-utils`
 
 
