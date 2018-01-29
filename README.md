@@ -73,7 +73,7 @@ Here are the steps:
          10% building modules 2/5 modules 3 active ...alesforce-ngJS-boilerplate\src\app.js
          10% building modules 3/5 modules 2 active ...alesforce-ngJS-boilerplate\src\app.js
     ```
-    Your tunneling will be available in console in `line 4`
+    Your tunneling will be available in console in `line 4`. In this example it is: `TUNNELING URL: https://ed6c143b.ap.ngrok.io`
  4. Now your application are available in url `https://tunnel-example-url.ap.ngrok.io/bin/app.bundle.js` which `tunnel-example-url.ap.ngrok.io` is your received tunnel from console
  5. Copy link to `app.bundle.js` and paste script link to the bottom of your `Visualforce page`
   Now, your `Visualforce page` wil be look like this: 
