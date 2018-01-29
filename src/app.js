@@ -1,5 +1,11 @@
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
+// MATERIAL UI LIBRARY HERE
+import angularAnimate from 'angular-animate';
+import angularAria from 'angular-aria';
+import angularMessages from 'angular-messages';
+import ngMaterial from 'angular-material';
+// END MATERIAL UI LIBRARY
 import * as sfRemoteUtils from 'salesforce-js-remoting-utils/dist/sf-remote-utils';
 const {NgJSRemoteService} = sfRemoteUtils;
 
@@ -12,7 +18,7 @@ import {NavBarComponent} from "./component/index";
 const rootBaseHref = getBaseHref();
 
 const app = function (angular) {
-    const $dependencies = ['ui.router'];
+    const $dependencies = ['ui.router', 'ngMaterial'];
 
     // CONFIG FOR UI ROUTER BASE HREF
     angular.element(document.getElementsByTagName('head'))

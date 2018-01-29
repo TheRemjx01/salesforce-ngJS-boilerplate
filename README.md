@@ -3,44 +3,23 @@
 ### Concept 
 To develop Salesforce in the moderm web development - SPA. 
 Run fast, efficiently. No reload at all.
-In the basic example, we have already integrated `webpack bundle` from `local dev server + tunnel` to `Visualforce page`.
+In the [Router Example Guide](https://github.com/TheRemjx01/salesforce-ngJS-boilerplate/tree/router-example) we have already covered how to integrate `ui-router` to be able to navigate between pages of our SPA Application without reload anything at all. 
 
-In this guide, we will covered `ui-router` integrated into our app to complete our SPA Application.
+In this chapter, we will add `ng-material` as our UI Library and demo a few `Remote Action` that integrated with `SOQL` as well as `Salesforce Object`.
+Why `ng-material`? Because currently , the most popular UI Library in Salesforce is `Lightning Design System(SLDS)`. However `SLDS` is only CSS Framework.
+Actually, we don't want to rewrite all the date-picker, custom table, other ui component again.
+ So we need a UI Framework in `angularJS` to develop faster and efficiently!.
+
  
 ### Update/ Changes from last guide
-1. Add new Scene: `HomeScene`, `InvalidUrlScene` (aka `404Scene`)
-2. Add new Component: `NavBarComponent`
-3. Add `app.routes.js` - config all routes
-4. Update `app.js` - register routes, config base href, register new components and scenes.
+
 
 
 ### Step by Step
 #### From `Salesforce`
-1. Step by step from branch [basic](https://github.com/TheRemjx01/salesforce-ngJS-boilerplate/tree/basic "Basic Example")
-2. Create your Salesforce Site to your Visualforce page, i.e `SPA_HomePage`. Example site name: `https://angular-boilerplate-developer-edition.ap5.force.com/dev`
+
 #### Client site
-1. Step by step from branch [basic](https://github.com/TheRemjx01/salesforce-ngJS-boilerplate/tree/basic "Basic Example")
-2. Update your `base` tag configuration in head using dynamic append element(In `app.js` after comment: `// CONFIG FOR UI ROUTER BASE HREF`).
-3. Create your `app.routes.js` that contains all `ui-router` state. 
-4. Register all routes to your app in `app.js`
-    ```
-        import import allRoutes from './app.routes';
-        
-        // angular.module first then ...
-        .config(($stateProvider, $urlRouterProvider) => {
-                    $urlRouterProvider.when('', '/'); // default route
-        
-                    // register all router state
-                    allRoutes.forEach(item => {
-                        $stateProvider.state(item)
-                    });
-        
-                    $urlRouterProvider.otherwise('/404'); // if not in routes list, move to 404 ui.router state
-        
-                })
-        // ... continue to register component
-    ```
-5. Add `HomeScene`, `404Scene`, `NavBarComponent` to test your updated app.
+
 
      
     
