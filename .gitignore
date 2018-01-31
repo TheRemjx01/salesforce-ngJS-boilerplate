@@ -1,4 +1,5 @@
 node_modules/
 .idea/
-bin/
+# i will add bin folder to this example in the case that you need. Practically, i will remove bin from git
+# bin/
 yarn-error.log
