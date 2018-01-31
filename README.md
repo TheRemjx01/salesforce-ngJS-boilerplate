@@ -18,9 +18,12 @@ Actually, we don't want to rewrite all the date-picker, custom table, other ui c
 
 
 ### Step by Step
-#### From `Salesforce`
 
 #### Client site
+1. Install `angular-material`, `angular-animate`, `angular-aria` using `npm` or `yarn`
+2. Import these libs to `app.js`
+3. Add `ngMaterial` to `app.module`
+4. Create `todos.service.js` and register to `app.module.js`
 
 
      

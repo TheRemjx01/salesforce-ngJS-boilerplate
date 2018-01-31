@@ -14,7 +14,7 @@ export default [
     {
       id: 't_03',
       title: 'Call mom',
-      description: '04:00 PM today'
+      description: '04:00 PM today',
         isCompleted: false
     },
 ]

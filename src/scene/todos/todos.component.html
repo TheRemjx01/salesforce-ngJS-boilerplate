@@ -1,1 +1,46 @@
-<h3>Hello, Todos Works!</h3>
+
+
+<div  style="height: 90vh; width: 100%"
+      layout="row"
+      layout-align="center start"
+>
+    <div flex="30">
+        <h3>Todo list</h3>
+        <div ng-repeat="todo in $ctrl.todos">
+            <md-checkbox ng-checked="todo.isCompleted" aria-label="todo.title" ng-click="$ctrl.onTodoClick(todo.id)">
+                <span>{{todo.title}}</span>
+            </md-checkbox>
+            <a href="#" ng-click="$ctrl.viewTodo(todo.id); $event.preventDefault()">View Details</a>
+        </div>
+    </div>
+
+    <form flex="30" layout="column" ng-submit="$ctrl.addTodo()">
+        <div layout="column" ng-if="!$ctrl.editTodo">
+            <h3>Add New Todos</h3>
+            <md-input-container>
+                <label>Title</label>
+                <input type="text" ng-model="$ctrl.newTodo.title"/>
+            </md-input-container>
+            <md-input-container>
+                <label>Description</label>
+                <textarea ng-model="$ctrl.newTodo.description"></textarea>
+            </md-input-container>
+            <md-button class="md-raised md-primary" type="submit" ng-disabled="!$ctrl.newTodo.title">Add Todo </md-button>
+        </div>
+        <div layout="column" ng-if="$ctrl.editTodo">
+            <h3>Edit todos</h3>
+            <md-input-container>
+                <label>Title</label>
+                <input type="text" ng-model="$ctrl.editTodo.title" ng-disabled="true"/>
+            </md-input-container>
+            <md-input-container>
+                <label>Description</label>
+                <textarea ng-model="$ctrl.editTodo.description" ng-disabled="true"></textarea>
+            </md-input-container>
+        </div>
+
+
+        <!--<md-button class="md-raised md-primary">Add Todo</md-button>-->
+    </form>
+
+</div>

@@ -5,6 +5,7 @@ import angularAnimate from 'angular-animate';
 import angularAria from 'angular-aria';
 import angularMessages from 'angular-messages';
 import ngMaterial from 'angular-material';
+import ngMaterialCss from 'angular-material/angular-material.css';
 // END MATERIAL UI LIBRARY
 import * as sfRemoteUtils from 'salesforce-js-remoting-utils/dist/sf-remote-utils';
 const {NgJSRemoteService} = sfRemoteUtils;
@@ -39,7 +40,7 @@ const app = function (angular) {
 
         })
         .service('ngJSRemoteService', NgJSRemoteService)
-        .service('todoService', TodoService)
+        .service('todosService', TodoService)
         .component('navBar', NavBarComponent)
         .component('homeScene', HomeScene)
         .component('todosScene', TodosScene)
