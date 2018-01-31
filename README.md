@@ -1,7 +1,7 @@
 # Salesforce-AngularJS-Boilerplate
 ## An AngularJS SPA Application Boilerplate for Salesforce Developer
 ### Concept 
-To develop Salesforce in the moderm web development - SPA. 
+To develop Salesforce in the modern web development - SPA. 
 Run fast, efficiently. No reload at all.
 In the basic example, we have already integrated `webpack bundle` from `local dev server + tunnel` to `Visualforce page`.
 
