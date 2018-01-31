@@ -10,10 +10,11 @@ import * as sfRemoteUtils from 'salesforce-js-remoting-utils/dist/sf-remote-util
 const {NgJSRemoteService} = sfRemoteUtils;
 
 import { getBaseHref } from './app.config';
-import {HomeScene, InvalidUrlScene} from "./scene/index";
+import {HomeScene, InvalidUrlScene, TodosScene} from "./scene/index";
 import appComponent from './app.component';
 import allRoutes from './app.routes';
 import {NavBarComponent} from "./component/index";
+import {TodoService} from "./service/index";
 
 const rootBaseHref = getBaseHref();
 
@@ -38,8 +39,10 @@ const app = function (angular) {
 
         })
         .service('ngJSRemoteService', NgJSRemoteService)
+        .service('todoService', TodoService)
         .component('navBar', NavBarComponent)
         .component('homeScene', HomeScene)
+        .component('todosScene', TodosScene)
         .component('invalidUrlScene', InvalidUrlScene)
         .component('appRoot', appComponent);
 }(angular);

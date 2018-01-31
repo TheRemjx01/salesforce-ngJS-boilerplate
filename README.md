@@ -9,6 +9,8 @@ In this chapter, we will add `ng-material` as our UI Library and demo a few `Rem
 Why `ng-material`? Because currently , the most popular UI Library in Salesforce is `Lightning Design System(SLDS)`. However `SLDS` is only CSS Framework.
 Actually, we don't want to rewrite all the date-picker, custom table, other ui component again.
  So we need a UI Framework in `angularJS` to develop faster and efficiently!.
+ 
+ In this example, i will create a todos-app.
 
  
 ### Update/ Changes from last guide

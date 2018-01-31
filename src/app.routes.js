@@ -9,4 +9,9 @@ export default [
         url: '/404',
         component: 'invalidUrlScene'
     },
+    {
+        name: 'todos',
+        url: '/todos',
+        component: 'todosScene'
+    }
 ]
